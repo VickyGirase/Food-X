@@ -6,7 +6,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: "https://food-x-coral.vercel.app/",  
+    origin: "https://food-x-coral.vercel.app",  
     credentials: true,
   })
 );
