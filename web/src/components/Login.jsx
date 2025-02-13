@@ -13,7 +13,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post("http://localhost:5000/login", { emailId, password },
+            const response = await axios.post("https://food-x-lszq.onrender.com/login", { emailId, password },
                 { withCredentials: true }
             );
             return navigate("/body");
