@@ -15,7 +15,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post("http://localhost:5000/signup", { firstName, emailId, password },
+            const response = await axios.post("https://food-x-lszq.onrender.com/signup", { firstName, emailId, password },
                 { withCredentials: true }
             );
             return navigate("/body");
